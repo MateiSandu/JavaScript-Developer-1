@@ -4,9 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Variables, Types and Collections</title>
-    <script src="/Variables, Types, and Collections/index.js"></script>
 </head>
 <body>
-    hi
+    <div>
+        <h1>Variables, Types and Collections</h1>
+        <p><em>Learning JavaScript</em></p>
+        <p><strong>Variables, Types, and Collections: 23%</strong></p>
+        <hr>
+        <section>
+            <h2>Variables</h2>
+            <p>The name of a variable is called an identifier, and it must conform to certain naming rules. A variable can be declared using the var, let, or const keyword. Global variables exist outside any function while local variables are defined inside a particular function.</p>
+            <p>Examples:</p>
+            <pre><code>var globalVar = 10; // Global variable
+let localVar = 'Local'; // Local variable
+const PI = 3.14; // Constant variable
+</code></pre>
+        </section>
+        <hr>
+        <section>
+            <h2>Data Types</h2>
+            <p>JavaScript supports eight data types for storing data:</p>
+            <ul>
+                <li><strong>Boolean:</strong> Represents a logical value: true or false.</li>
+                <li><strong>Number:</strong> Represents numeric values, both integers and floating-point numbers.</li>
+                <li><strong>String:</strong> Represents a sequence of characters.</li>
+                <li><strong>BigInt:</strong> Represents integers with arbitrary precision.</li>
+                <li><strong>Symbol:</strong> Represents unique and immutable values.</li>
+                <li><strong>Object:</strong> Represents collections of data or complex entities.</li>
+                <li><strong>null:</strong> Represents the intentional absence of any value.</li>
+                <li><strong>undefined:</strong> Represents a variable that has not been assigned a value.</li>
+            </ul>
+            <p>Examples:</p>
+            <pre><code>let isTrue = true;
+let numberValue = 42;
+let stringValue = 'Hello, World!';
+let bigIntValue = 9007199254740991n;
+let symbolValue = Symbol('foo');
+let objectValue = { key: 'value' };
+let nullValue = null;
+let undefinedValue;
+</code></pre>
+        </section>
+        <hr>
+        <section>
+            <h2>Wrapper Objects</h2>
+            <p>Primitive data types like strings, booleans, and numbers have corresponding wrapper objects that allow them to be treated as objects:</p>
+            <pre><code>let str = 'Hello';
+let strObject = new String('Hello');
+console.log(typeof str); // string
+console.log(typeof strObject); // object
+</code></pre>
+        </section>
+        <hr>
+        <section>
+            <h2>Typecasting</h2>
+            <p>Typecasting allows you to convert a value from one data type to another:</p>
+            <pre><code>let numStr = '42';
+let num = Number(numStr); // Explicit conversion to number
+let boolValue = Boolean(''); // Implicit conversion to boolean (false)
+let strValue = String(123); // Implicit conversion to string
+</code></pre>
+        </section>
+        <!-- Add more sections as needed -->
+    </div>
 </body>
 </html>
